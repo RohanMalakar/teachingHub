@@ -31,7 +31,11 @@ export default function HeroPage() {
           Get started
         </button>
       </div>
-      <div className='absolute lg:-left-[86px] -left-[50px]  bg-gradient-to-t from-[#6198f1] via-[#B1CCF8] to-[#B1CCF8] lg:-top-[255px] -top-[100px] w-[300px] lg:w-[581px] h-[300px] lg:h-[581px] rounded-full bg-[#A8C4F1] -z-2 right-0'>  
+      <div className='absolute lg:-left-[86px] -left-[50px]  bg-gradient-to-t from-[#6198f1] via-[#B1CCF8] to-[#B1CCF8] lg:-top-[255px] -top-[100px] w-[300px] lg:w-[581px] h-[300px] lg:h-[581px] rounded-full bg-[#A8C4F1] -z-2 right-0'> 
+        <p className="absolute text-[#FFFFFF21] bottom-20 lg:bottom-30 right-10 lg:right-40  z-2 2xl lg:text-4xl text-2xl font-inika font-extrabold ">
+          TEACHING
+          <span className="text-[10px] lg:text-xl">HUB</span>
+        </p>
       </div>
       <div className='absolute lg:-left-[267px] -left-24 lg:-top-[239px] -top-[100px] w-[400px] h-[400px] lg:w-[868px] lg:h-[868px] rounded-full bg-[#A8C4F1] -z-10 right-0'>  
       </div>
