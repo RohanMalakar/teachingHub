@@ -46,13 +46,13 @@ const courses: Course[] = [
 
 const Courses: React.FC = () => {
   return (
-    <div className="relative bg-white py-8 -z-40 lg:py-12">
+    <div className="relative bg-white py-8 -z-40 lg:py-24">
       <div className='absolute -left-[20%]  bg-gradient-to-t from-[#79A2E5] to-[#B1CCF8] top-0  w-[300px] lg:w-[581px] h-[300px] lg:h-[581px] rounded-full -z-10 right-0'> 
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className='z-2'>
-          <p className="text-sm lg:text-base text-blue-600 font-bold">Courses</p>
-          <h2 className="text-2xl lg:text-3xl  font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8">OUR POPULAR COURSES</h2>
+          <p className="text-lg lg:text-base border-b-2 inline text-blue-600 font-bold">Courses</p>
+          <h2 className="text-2xl lg:text-3xl   font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8">OUR POPULAR COURSES</h2>
         </div>
         <div className="grid grid-cols-1 z-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
           {courses.map((course) => (
@@ -69,8 +69,8 @@ const Courses: React.FC = () => {
                 <h3 className="text-lg lg:text-xl  font-semibold text-gray-900 mb-1 lg:mb-2">{course.title}</h3>
                 <p className="text-gray-600 text-xs pt-2 lg:text-sm mb-2 lg:mb-4">{course.description}</p>
               </div>
-              <button className="bg-[#0555C7] hover:bg-[#32A6FB] cursor-pointer rounded-3xl px-5 py-2 text-white ">
-                <FaArrowRightLong className="-rotate-45" />
+              <button className="bg-[#0555C7]  hover:bg-[#32A6FB] cursor-pointer rounded-3xl px-5 py-2 text-white ">
+                <FaArrowRightLong className="-rotate-45 cursor-pointer" />
               </button>
             </div>
           ))}
