@@ -28,7 +28,7 @@ function NavBar() {
       </div>
       <div className="lg:flex hidden items-center font-bold gap-5">
         <NavLink
-          to="/home"
+          to="/"
           className={({ isActive }) =>
             isActive
               ? 'text-black border-b-3  border-[#D13C84]'

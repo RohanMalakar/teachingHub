@@ -1,21 +1,15 @@
 import './App.css'
-import About from './componets/about.tsx'
-import Courses from './componets/courseType.tsx'
-import HeroPage from './componets/heroPage.tsx'
-import NavBar from './componets/navBar.tsx'
-import Footer from './componets/footer.tsx'
-import WhyUs from './componets/whyUs.tsx'
-
+import AboutPage from './pages/aboutPage'
+import CoursePage from './pages/coursePage'
+import HomePage from './pages/homePage'
+import { Routes, Route} from 'react-router-dom'
 function App() {
   return (
-    <>
-       <NavBar />
-       <HeroPage/>
-       <About />
-       <Courses />
-       <WhyUs />
-       <Footer />
-    </>
+    <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/about' element={<AboutPage/>}/>
+        <Route path='/courses' element={<CoursePage/>}/>
+    </Routes>
   )
 }
 
