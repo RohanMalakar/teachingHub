@@ -1,14 +1,20 @@
 import React from "react";
+import developerActivity from "../assets/LearningGoal/developerActivity.gif";
+import training from "../assets/LearningGoal/training.png";
+import certificate from "../assets/LearningGoal/certificate.png";
+import project from "../assets/LearningGoal/project.png";
 
 const LearningGoals: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center p-6 md:p-8 w-full">
-      <div className="md:w-1/2 w-full text-center md:text-left">
-        <h2 className="text-2xl font-bold mb-4 border-b-2 pb-2">Learning focused on your goals</h2>
+    <div className="flex flex-col md:pb-36 md:flex-row justify-between items-center p-6 md:p-8 w-[80%] mx-auto">
+      <div className="md:w-1/3 w-full text-center md:text-left">
+        <h2 className="text-2xl font-bold mb-4 border-b-2 border-[#0555C7] pb-2">Learning focused on your goals</h2>
         
-        <div className="space-y-4">
-          <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col md:flex-row items-center md:items-start">
-            <img src="/assets/training.png" alt="Hand-On Training" className="w-12 h-12 mb-2 md:mb-0 md:mr-4" />
+        <div className="space-y-5">
+          <div className="bg-white shadow-lg rounded-lg p-4 gap-5 flex flex-col md:flex-row items-center md:items-start">
+            <div className="border-1 flex items-center justify-center  rounded-full  bg-[#C5DBFF] p-2 shadow-md">
+              <img src={training} alt="Hand-On Training" className="max-w-12 max-h-12" />
+            </div>
             <div>
               <h3 className="font-bold">Hand - On Training</h3>
               <p className="text-gray-600 text-sm">
@@ -17,8 +23,10 @@ const LearningGoals: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-blue-200 shadow-lg rounded-lg p-4 flex flex-col md:flex-row items-center md:items-start">
-            <img src="/assets/certification.png" alt="Certification" className="w-12 h-12 mb-2 md:mb-0 md:mr-4" />
+          <div className="bg-[#C5DBFF] shadow-lg gap-5  rounded-lg p-4 flex flex-col md:flex-row items-center md:items-start">
+            <div className="border-1 mr-3 rounded-full bg-white p-2 shadow-md">
+              <img src={certificate} alt="Certification" className="max-w-12 max-h-12 " />
+            </div>
             <div>
               <h3 className="font-bold">Certification</h3>
               <p className="text-gray-600 text-sm">
@@ -27,8 +35,10 @@ const LearningGoals: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-blue-300 shadow-lg rounded-lg p-4 flex flex-col md:flex-row items-center md:items-start">
-            <img src="/assets/projects.png" alt="Major Projects" className="w-12 h-12 mb-2 md:mb-0 md:mr-4" />
+          <div className="bg-[#C5DBFF] gap-5 shadow-lg rounded-lg p-4 flex flex-col md:flex-row items-center md:items-start">
+            <div className="border-1 mr-3 rounded-full bg-white p-2 shadow-md">
+               <img src={project} alt="Major Projects" className="max-w-12 max-h-12" />
+            </div>
             <div>
               <h3 className="font-bold">3 - 4 Major Projects</h3>
               <p className="text-gray-600 text-sm">
@@ -38,13 +48,13 @@ const LearningGoals: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      <div className="md:w-1/2 w-full flex justify-center mt-6 md:mt-0">
-        <img src="/assets/developer.png" alt="Developer Illustration" className="w-60 md:w-80" />
-      </div>
-
-      <div className="w-full flex justify-center mt-6">
-        <button className="bg-orange-500 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-orange-600 transition">Enroll Fast</button>
+      <div className="md:w-2/3 w-full flex flex-col items-center justify-center mt-6 md:mt-0">
+        <div className="md:w-[50%] w-full flex justify-center mt-6 md:mt-0">
+          <img src={developerActivity} alt="Developer Illustration" className="w-full" />
+        </div>
+        <div className="md:w-[50%] w-full flex justify-center mt-6">
+          <button className="bg-[#F58A3C] text-white px-6 py-2 w-full rounded-lg shadow-lg hover:bg-orange-600 transition">Enroll Fast</button>
+        </div>
       </div>
     </div>
   );

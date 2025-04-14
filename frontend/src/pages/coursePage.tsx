@@ -1,4 +1,5 @@
 import CoursesList from "../componets/courseslist";
+import Footer from "../componets/footer";
 import LearningGoals from "../componets/learningGoal";
 import NavBar from "../componets/navBar";
 
@@ -15,6 +16,7 @@ function CoursePage() {
        </div>
        <CoursesList/>
        <LearningGoals/>
+       <Footer/>
     </div>
   )
 }
