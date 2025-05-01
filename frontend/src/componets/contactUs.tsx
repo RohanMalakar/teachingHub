@@ -128,7 +128,7 @@ const ContactUs: React.FC<ContactFormProps> = () => {
            <img src={phoneimg} alt=""  />
            <div>
             <h3>Phone </h3>
-            <p className='text-[12px]'>+91 12323 43444</p>
+            <p className='text-[12px]'>+91 6261704431</p>
            </div>
          </div>
       </div>

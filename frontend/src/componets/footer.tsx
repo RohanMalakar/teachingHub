@@ -86,26 +86,24 @@ const Footer = () => {
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                   <img src={phone} alt="Phone" className="w-8 h-8 text-blue-600" />
                 </div>
-                <p className="text-sm">+91 9289704431</p>
+                <p className="text-sm">+91 6261704431</p>
               </div>
 
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                   <img src={mail} alt="Mail" className="w-8 h-8 text-blue-600" />
                 </div>
-                <p className="text-sm">TeachingHubteam@Outlook.Com</p>
+                <p className="text-sm">teachinghubteam@outlook.com</p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 mt-1 bg-white rounded-full flex items-center justify-center">
                   <img src={location} alt="Location" className="w-4 h-4 text-blue-600" />
                 </div>
-                <p className="text-sm">
-                  97-D, Kailash Nagar,<br />
-                  Near Prime Hospital,<br />
-                  Mhapani, Gwalior,<br />
-                  Madhya Pradesh-474002
-                </p>
+                <div >
+                  <h3>Address</h3>
+                  <p className='text-[12px]'>D-13, Kailash Nagar,<br /> near Prime Hospital,  <br />Alkapuri, Gwalior, <br /> Madhya Pradesh 474002</p>
+                </div>
               </div>
             </div>
           </div>

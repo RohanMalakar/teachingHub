@@ -23,7 +23,7 @@ const MissionVisionOverview: React.FC = () => {
     },
     {
       title: 'VISION',
-      description: 'our vision is to educate and empower individuals within our community, fostering personal and economic growth. We believe that education is a transformative force that can unlock opportunities and create a pathway towards a brighter future.',
+      description: 'Our vision is to educate and empower individuals within our community, fostering personal and economic growth. We believe that education is a transformative force that can unlock opportunities and create a pathway towards a brighter future.',
       image: overview,
     },
   ]
